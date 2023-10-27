@@ -4,6 +4,7 @@
     "homepage": "https://github.com/anirul/cuqoi/",
     "description": "CUDA Qoi (Quite Ok Image) file reader (and writer).",
     "dependencies": [
+        "abseil",
         "gtest"
     ]
 }
