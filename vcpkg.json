@@ -1,0 +1,9 @@
+{
+    "name": "cuqoi",
+    "version-string": "0.0.1-alpha",
+    "homepage": "https://github.com/anirul/cuqoi/",
+    "description": "CUDA Qoi (Quite Ok Image) file reader (and writer).",
+    "dependencies": [
+        "gtest"
+    ]
+}
