@@ -7,7 +7,12 @@ add_library(cuQoiLib
 
 target_include_directories(cuQoiLib
     PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/../include    
+        ${CMAKE_CURRENT_SOURCE_DIR}/../include   
+)
+
+target_link_libraries(cuQoiLib
+    PUBLIC
+        glm::glm
 )
 
 set_property(TARGET cuQoiLib PROPERTY FOLDER "cuQoiLib")

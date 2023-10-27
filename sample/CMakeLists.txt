@@ -14,6 +14,7 @@ target_link_libraries(encoder
         cuQoiLib
         absl::base
         absl::flags
+        absl::flags_parse
 )
 
 set_property(TARGET encoder PROPERTY FOLDER "cuQoiSample")

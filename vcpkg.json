@@ -5,6 +5,7 @@
     "description": "CUDA Qoi (Quite Ok Image) file reader (and writer).",
     "dependencies": [
         "abseil",
-        "gtest"
+        "gtest",
+        "glm"
     ]
 }

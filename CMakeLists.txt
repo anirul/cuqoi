@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add benchmark!
 find_package(absl CONFIG REQUIRED)
+find_package(glm CONFIG REQUIRED)
 find_package(GTest CONFIG REQUIRED)
 
 # Adding subfolder property.
