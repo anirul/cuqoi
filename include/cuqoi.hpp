@@ -31,6 +31,7 @@ class CuqoiImage
         uint8_t colorspace; // 0 = sRGB with linear alpha
                             // 1 = all channels linear
     };
+    // File header.
     qoi_header_ header_;
     const size_t header_size_ = sizeof(qoi_header_);
     void OpenContent(void* ptr, size_t size);

@@ -47,6 +47,7 @@ void CuqoiImage::OpenContent(void* ptr, size_t size)
     {
         throw std::runtime_error("Invalid header (image is too small).");
     }
+    // Get the header from the data.
     std::memcpy(&header_, ptr, header_size_);
     if ((header_.magic[0] != 'q') || (header_.magic[1] != 'o') ||
         (header_.magic[2] != 'i') || (header_.magic[3] != 'f'))
