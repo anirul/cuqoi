@@ -16,6 +16,17 @@ The decrypting per fragment would work as follow.
 
 Go back into the file to search for the first valid byte (b11111111 or b11111110) should not have to go back more than 4 bytes. Then check if the byte before is (b01) this would mean a double byte. If it is not found then this is a valid byte.
 
+```cpp
+enum class qoi_type_t {
+    QOI_OP_RGB      = 0b11111110, // OP || R || G || B
+    QOI_OP_RGBA     = 0b11111111, // OP || R || G || B || A
+    QOI_OP_INDEX    = 0b00000000, // OP | index
+    QOI_OP_DIFF     = 0b01000000, // OP | dr | dg | db
+    QOI_OP_LUMA     = 0b10000000, // OP | dg || dr - dg | db - dg
+    QOI_OP_RUN      = 0b11000000, // OP | run
+};
+```
+
 ### Compute the size and output temporary result
 
 The size can be computed by [the same way](https://github.com/anirul/OpenCL_Crash_Course) we do histogram. It could be computed int log2 time of the whole image.
