@@ -8,7 +8,7 @@ The idea is to decrypt this if possible in parallel.
 
 - Parse the file (or at least the header) on CPU.
 - Send the data to the GPU and header.
-- Make a kernel either per fragment (byte).
+- Make a kernel per fragment (byte).
 
 The decrypting per fragment would work as follow.
 
