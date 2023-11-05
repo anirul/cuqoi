@@ -35,11 +35,11 @@ enum class qoi_type_t : unsigned char
 // QOI byte GPU data.
 struct qoi_byte_storage_t
 {
-    int pos = -1;      // Position in the image.
-    int repeat = 0;    // Is it repeated?
-    char color[4];     // Color.
-    qoi_type_t type;   // What it the underlying type?
-    bool valid = true; // Is this bit valid?
+    int pos = -1;           // Position in the image.
+    int repeat = 0;         // Is it repeated?
+    std::int8_t color[4];   // Color.
+    qoi_type_t type;        // What it the underlying type?
+    bool valid = true;      // Is this bit valid?
 };
 
 // class CuqoiImage

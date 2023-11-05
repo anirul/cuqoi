@@ -4,9 +4,12 @@ add_executable(encoder
     encoder.cpp
 )
 
+find_path(QOI_INCLUDE_DIRS "qoi.h")
+
 target_include_directories(encoder
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/../include
+        ${QOI_INCLUDE_DIRS}
 )
 
 target_link_libraries(encoder

@@ -2,10 +2,11 @@
     "name": "cuqoi",
     "version-string": "0.0.1-alpha",
     "homepage": "https://github.com/anirul/cuqoi/",
-    "description": "CUDA Qoi (Quite Ok Image) file reader (and writer).",
+    "description": "CUDA QOI (Quite Ok Image) file reader (and writer).",
     "dependencies": [
         "abseil",
         "gtest",
-        "glm"
+        "glm",
+        "qoi"
     ]
 }
